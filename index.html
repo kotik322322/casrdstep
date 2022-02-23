@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./img/favicon/heart.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Step Project Cards</title>
+</head>
+<body>
+    
+    <header id="header" class="header">
+        <div class="header__inner container">
+
+                <img class="header__logo" src="./img/header/Hosp_britanico_logo.svg" width="200px" alt="Hosp_britanico_logo">
+                    
+                <div class="header__btn">
+
+                    <button id="header-btn" class="header__action-btn">Sign in</button>
+
+                </div>
+        </div>
+
+    </header>
+
+<!-- ====================== Главный ФИЛЬТР =========================== -->
+
+<div class="filter container"> 
+
+    <form action="#" class="filter__form">
+      <div class="filter__inner">
+
+
+
+
+        <div class="filter__item">
+          <input id="Search" type="text" name="searchVisit" placeholder="Search for type of visits" class="filter__search">
+        </div>
+
+
+
+            <div class="filter__item">
+              <select name="visitStatus" size="1" id="Status" class="filter__search">
+              
+                <option selected value="all">All</option>
+                <option value="Open">Open</option>
+                <option value="Done">Done</option>
+              
+              </select>
+            </div>
+
+
+          <div class="filter__item">
+            <select name="visitUrgency" size="1" id="Urgency" class="filter__search">
+            
+              <option selected value="all">All</option>
+              <option value="usual">Usual</option>
+              <option value="priority">Priority</option>
+              <option value="urgent">Urgent</option>
+              
+            </select>
+          </div>
+          
+      </div>
+
+    </form>
+</div>
+
+
+
+  <div class="title">
+    <h1 class="title__nocards">No items have been added</h1>
+  </div>
+
+
+
+      <div class="root container" id="root">
+        
+      </div>
+
+
+
+<script type="module" src="./js/app.js"></script>
+
+
+</body>
+</html>
